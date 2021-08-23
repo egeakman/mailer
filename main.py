@@ -9,7 +9,7 @@ import os
 import tempfile
 from pathlib import Path
 import time
-import license
+import agpl
 
 print(chr(27) + "[2J")
 
@@ -91,7 +91,7 @@ time.sleep(2)
 
 if str(os.path.exists(f"{tempfile.gettempdir()}/mailer_no_first")) == "False":
 
-    printy(license.license, "wB")
+    printy(agpl.license, "wB")
 
     printy(
         "\nYou can also find this license at https://github.com/egeakman/mailer/blob/master/LICENSE\n",
